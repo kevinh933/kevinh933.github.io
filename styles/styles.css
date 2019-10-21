@@ -45,3 +45,22 @@ footer {
 #new-font {
     font-family: fantasy, cursive, serif;
 }
+
+header p {
+    font-weight: bold;
+    color: blue;
+}
+
+figure.border {
+    background-color: lightslategray;
+    border: black solid thin;
+    padding: 5px;
+}
+
+figcaption {
+    background-color: gold;
+    color: black;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: left;
+}

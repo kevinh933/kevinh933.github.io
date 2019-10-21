@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(11, 211, 247)
+    background-color: lightsteelblue
 }
 
 h1 {
@@ -13,21 +13,21 @@ h2 {
 }
 
 header {
-    background-color: silver;
+    background-color: paleturquoise;
 }
 
 main {
-    background-color: gold;
+    background-color: antiquewhite;
 }
 
 header p {
     font-weight: bold;
     font-style: italic;
-    color: blue;
+    color:teal;
 }
 
 footer {
-    background-color: blue;
+    background-color:lightskyblue;
     border: black solid thin;
     padding-left: 5px;
     border-radius: 8px; 

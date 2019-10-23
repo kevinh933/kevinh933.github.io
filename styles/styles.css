@@ -1,5 +1,7 @@
 body {
-    background-color: lightsteelblue
+    background-color: lightsteelblue;
+    max-width: 610px;
+    margin: auto;
 }
 
 h1 {

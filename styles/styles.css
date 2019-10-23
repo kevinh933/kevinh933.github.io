@@ -37,6 +37,11 @@ footer {
 
 }
 
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
 .blue-text {
     color: blue;
     
@@ -49,6 +54,15 @@ footer {
 header p {
     font-weight: bold;
     color: blue;
+}
+
+figure {
+    margin: left;
+    max-width: 500px;
+    padding: 5px;
+    flex-flow: column;
+    display: flex;
+    border: thin;
 }
 
 figure.border {

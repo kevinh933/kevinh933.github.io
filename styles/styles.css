@@ -97,3 +97,14 @@ nav li {
     display: inline;
     padding: 8px;    
 }
+
+.btn-padding {
+    padding: 25px;
+    border: 10px green double;    
+    border-radius: 22px;
+}
+
+.btn-padding:hover {
+    background-color: aqua;
+    border-color: white;
+}                   

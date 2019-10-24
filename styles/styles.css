@@ -1,5 +1,7 @@
 body {
-    background-color: lightsteelblue
+    background-color: lightsteelblue;
+    max-width: 610px;
+    margin: auto;
 }
 
 h1 {
@@ -37,6 +39,11 @@ footer {
 
 }
 
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
 .blue-text {
     color: blue;
     
@@ -49,6 +56,15 @@ footer {
 header p {
     font-weight: bold;
     color: blue;
+}
+
+figure {
+    margin: left;
+    max-width: 500px;
+    padding: 5px;
+    flex-flow: column;
+    display: flex;
+    border: thin;
 }
 
 figure.border {
@@ -82,4 +98,44 @@ nav ul {
 nav li {
     display: inline;
     padding: 8px;    
+}
+
+.btn-padding {
+    padding: 25px;
+    border: 10px green double;    
+    border-radius: 22px;
+}
+
+.btn-padding:hover {
+    background-color: aqua;
+    border-color: white;
+}                   
+
+.btn-margin-padding {
+    margin: 25px;
+    border: 15px blue;
+    border-style: ridge;
+    padding-left: 20px;
+    padding-right: 20px;
+}       
+
+#button-wrapper {
+    background-color: aquamarine;
+    border: thin black solid;
+    display: inline-block;
+}
+
+.btn-margin-padding:active {
+    background-color: red;
+}       
+
+aside {        
+    background-color: bisque;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: right;
+    font-style: italic;
+    margin-right: 5px;
+    padding: 8px;
+    width: 10%;        
 }

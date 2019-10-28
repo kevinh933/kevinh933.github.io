@@ -139,3 +139,12 @@ aside {
     padding: 8px;
     width: 10%;        
 }
+
+.elf-div-border {
+    display: inline-block;
+    border: thin black 1px solid;
+}
+
+foo {
+    border: 14 55 66;
+}

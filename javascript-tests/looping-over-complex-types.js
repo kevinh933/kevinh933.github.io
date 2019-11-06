@@ -3,7 +3,7 @@ function divider() {
     console.log()
     console.log('---------------')
 }
-const myArray = ();
+const myArray = {};
 
 const numbers = (1, 2, 3, 5, 7);
 
@@ -22,6 +22,7 @@ console.log(numbers);
 const cloudy = true;
 const items = [1, 'two', [3, 4], false, null];
 console.log(items);
+
 for (let i = 0; i < items, length, i++) {
     console.log('Value of i;', i);
     console.log('Item:', items[i]);

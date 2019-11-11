@@ -1,6 +1,6 @@
 function divider() {
     console.log('---------------')
-    console.log()
+    console.log('')
     console.log('---------------')
 }
 const myArray = {};
@@ -23,9 +23,10 @@ const cloudy = true;
 const items = [1, 'two', [3, 4], false, null];
 console.log(items);
 
-for (let i = 0; i < items, length, i++) {
-    console.log('Value of i;', i);
+for(let i = 0; i < items.length; i++) {
+    //console.log('Value of i:', i);
     console.log('Item:', items[i]);
+
 }
 
 divider();
@@ -49,6 +50,8 @@ arrayToString(["bundle.js", "*.js.map", ".c9"]);
 
 stringToArray("bundle.js, *.js.map, .c9");
 
+const fileNames = "bundle.js, *.js.map, *.c9"
+
 divider();
     
     myObject = {};
@@ -58,3 +61,23 @@ divider();
         two: 2,
         three: 3
     }
+
+    divider();
+    
+    const myObject = {
+        five: 5,
+        six: 'six'
+    };
+    
+    console.log(myObject.five);
+    console.log(myObject.six);
+    
+    myObject.newItem = 'This is a new item in my object'
+    
+    console.log('Object with new item:', myObject);
+    
+    divider();
+    
+    console.log(items);
+    items.push(myObject);
+    console.log(items);

@@ -1,11 +1,14 @@
-const simpleFunction = "functions should consist of statements designed to perform a single task.";
-console.log(simpleFunction);
+function simpleFunction () {
+    console.log("functions should consist of statements designed to perform a single task.");
+}
 
-const functionParameters;
-console.log(functionParameters);
+function functionParameters(value) {
+    console.log(value);
+}
 
-const functionReturn = "Many functions return values.";
-console.log(functionReturn);
+simpleFunction();
+
+functionParamters("Many functions return values.");
 
 window.onload = () => {
     const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');

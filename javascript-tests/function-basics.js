@@ -32,7 +32,7 @@ window.onload = () => {
     function simple() {
         console.log('simple');
         simpleFunctionDisplay.textContent = "simple";
-    }
+}
     }
     functionCallsAction.onclick = simple;
     

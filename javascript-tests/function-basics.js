@@ -47,4 +47,5 @@ window.onload = () => {
     }
     const someAction = document.getElementById('someAction');
     someAction.onclick = function() {
+        
     }

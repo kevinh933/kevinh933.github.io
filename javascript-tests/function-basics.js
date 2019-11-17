@@ -1,5 +1,5 @@
 function simpleFunction () {
-    console.log("functions should consist of statements designed to perform a single task.");
+    console.log("Functions should consist of statements designed to perform a single task.");
 }
 
 function functionParameters(value) {
@@ -18,7 +18,7 @@ function add(a, b) {
 
 simpleFunction();
 
-functionParamters("Many functions return values.");
+functionParameters("Many functions take parameters.");
 
 const addResult = add(2, 3);
 
@@ -32,7 +32,7 @@ window.onload = () => {
     function simple() {
         console.log('simple');
         simpleFunctionDisplay.textContent = "simple";
-}
+    }
     }
     functionCallsAction.onclick = simple;
     

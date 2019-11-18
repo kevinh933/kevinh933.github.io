@@ -1,5 +1,5 @@
 function simpleFunction () {
-    console.log("functions should consist of statements designed to perform a single task.");
+    console.log("Functions should consist of statements designed to perform a single task.");
 }
 
 function functionParameters(value) {
@@ -18,7 +18,7 @@ function add(a, b) {
 
 simpleFunction();
 
-functionParamters("Many functions return values.");
+functionParameters("Many functions take parameters.");
 
 const addResult = add(2, 3);
 
@@ -28,4 +28,24 @@ console.log(returnValue);
 window.onload = () => {
     const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
     const functionCallsAction = document.getElementById('functionCallsAction');
-}
+
+    function simple() {
+        console.log('simple');
+        simpleFunctionDisplay.textContent = "simple";
+    }
+    }
+    functionCallsAction.onclick = simple;
+    
+    const data = nameDisplay.value;
+    
+    const elfCode = {
+        appendToList: (list, value) => {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(value));
+            list.appendChild(li);
+        }
+    }
+    const someAction = document.getElementById('someAction');
+    someAction.onclick = function() {
+        
+    }

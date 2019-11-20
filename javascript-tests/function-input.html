@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Function Input</title>
     <link href="../styles/function-input.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <script src="../function-input.js"></script>
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <script src="function-input.js"></script>
 </head>
 <body>
     <header>
@@ -22,33 +22,45 @@
     </nav>
     
     <main>
-        <p><b>Feet to Inches</b>:<span id="feetToInchesDisplay"></span></p>
+        <p>
+            <b>Feet to Inches:</b>
+            <span id="feetToInchesDisplay"></span>
+        </p>
 
-        <p><b>Miles to Feet</b>:<span id="milesToFeetDisplay"></span></p>
+        <p>
+            <b>Miles to Feet:</b>
+            <span id="milesToFeetDisplay"></span>
+        </p>
 
-        <p><b>Area of Triangle</b>:<span id="areaOfTriangleDisplay"></span></p>
+        <p>
+            <b>Area of Triangle:</b>
+            <span id="areaOfTriangleDisplay"></span>
+        </p>
 
-        <p><b>Area of Circle</b>:<span id="areaOfCircleDisplay"></span></p>
+        <p>
+            <b>Area of Circle:</b>
+            <span id="areaOfCircleDisplay"></span>
+        </p>
 
         <div>
             <button id="feetToInchesAction">Feet to Inches</button>
-            <input id="feetToInchesInput" type="text">
+            <input type="text" id="feetToInchesInput" name="nameDisplay" title="Enter Feet">
         </div>
 
         <div>
             <button id="milesToFeetAction">Miles to Feet</button>
-            <input id="milesToFeetInput" type="text">
+            <input type="text" id="milesToFeetInput" name="nameDisplay" title="Enter Miles">
         </div>
 
         <div>
             <button id="areaOfTriangleAction">Area of Triangle</button>
-            <input id="baseAreaOfTriangleInput" type="text">
-            <input id="HeightAreaOfTriangleInput" type="text">
+            <input type="text" id="areaOfTriangleInputB" name="nameDisplay" title="Enter Base">
+            <input type="text" id="areaOfTriangleInputH" name="nameDisplay" title="Enter Height">
         </div>
 
         <div>
             <button id="areaOfCircleAction">Area of Circle</button>
-            <input id="areaOfCircleInput" type="text">
+            <input type="text" id="areaOfCircleInput" name="nameDisplay" title="Enter Radius">
         </div>
     </main>
 </body>

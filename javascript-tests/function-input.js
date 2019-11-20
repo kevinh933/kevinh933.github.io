@@ -31,10 +31,11 @@ const milesToFeet = (miles) => {
         document.getElementById('areaOfTriangleAction');
 
     areaOfTriangleAction.onclick = () => {
-        const areaOfTriangleInput = document.getElementById('areaOfTriangleInput');
+        const baseAreaOfTriangleInput = document.getElementById('baseAreaOfTriangleInput');
+        const heightAreaOfTriangleInput = document.getElementById('heightAreaOfTriangleInput');
         const areaOfTriangleDisplay = document.getElementById('areaOfTriangleDisplay');
 
-        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleInput.value);
+        areaOfTriangleDisplay.textContent = areaOfTriangle(baseAreaOfTriangleInput.value, heightAreaOfTriangleInput.value);
     };
 
 const areaOfTriangle = (base, height) => {

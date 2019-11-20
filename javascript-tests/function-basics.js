@@ -1,40 +1,26 @@
-function simpleFunction () {
-    console.log("Functions should consist of statements designed to perform a single task.");
-}
-
-function functionParameters(value) {
-    console.log(value);
-}
-
-function functionreturn() {
-    return "Many functions return values.";
-}
-
-function add(a, b) {
-    const addResult = a + b;
-    console.log('inside add', addResult);
-    return a + b;
-}
-
-simpleFunction();
-
-functionParameters("Many functions take parameters.");
-
-const addResult = add(2, 3);
-
-const returnValue = functionReturn(addResult);
-console.log(returnValue);
-
 window.onload = () => {
-    const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
-    const functionCallsAction = document.getElementById('functionCallsAction');
+    const simpleFunction = document.getElementById('simpleFunctionDisplay');
+    const functionReturn = document.getElementById('functionReturnDisplay');
+    const functionParameters = document.getElementById('functionParametersDisplay');
 
-    function simple() {
-        console.log('simple');
+    function simpleFunction () {
+        console.log("Functions should consist of statements designed to perform a single task.");
         simpleFunctionDisplay.textContent = "simple";
     }
+
+    function functionParameters(value) {
+        console.log(value);
     }
-    functionCallsAction.onclick = simple;
+
+    function functionReturn() {
+        return "Many functions return values.";
+    }
+    }
+    functionCallsAction.onclick = function(){
+        simple();
+        functionParametersDisplay("Many functions take parameters");
+        let returnValue=functionReturn() 
+            functionParametersDisplay.textContent = returnValue;
     
     const data = nameDisplay.value;
     
@@ -45,7 +31,15 @@ window.onload = () => {
             list.appendChild(li);
         }
     }
-    const someAction = document.getElementById('someAction');
-    someAction.onclick = function() {
+    const functionCallsAction = document.getElementById('functionCallsAction');
+    functionCallsAction.onclick = function() {
         
+    }
+
+    simpleFunction();
+
+    functionParameters("Many functions take parameters.");
+
+    const returnValue = functionReturn(addResult);
+    console.log(returnValue);
     }

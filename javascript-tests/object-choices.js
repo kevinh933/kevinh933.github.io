@@ -17,14 +17,20 @@ window.onload = () => {
         simpleObjectDisplay.textContent=fullName;
     }
 
+    simpleObject.sayName();
+
     simpleObject.dynamicMethod = () => {
         console.log("Dynamic Method");
     }
+
+    simpleObject.dynamicMethod();
 
     functionObjectAction.onclick = function() {
         functionObject.sayName();
         functionObjectDisplay.textContent=fullName;
     }
+
+    const functionObject = new FunctionObject();
 
     function FunctionObject() {
         FunctionObject.prototype.sayName = function () {
@@ -32,14 +38,16 @@ window.onload = () => {
         }
     }
 
+    functionObject.sayName();
+
+    function privateFunction() {
+        return "Private Function";
+    }
+
+    privateFunction.sayName();
+
     customClassAction.onclick = function() {
         customClass.sayName();
         customClassDisplay.textContent=fullName;
     }
-
-    simpleObject.sayName();
-    simpleObject.dynamicMethod(); 
-    const functionObject = new FunctionObject();
-    functionObject.sayName();
-
 }

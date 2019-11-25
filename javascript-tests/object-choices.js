@@ -45,4 +45,9 @@ window.onload = () => {
     }
 
     privateFunction.sayName();
+
+    customClassAction.onclick = function() {
+        customClass.sayName();
+        customClassDisplay.textContent=fullName;
+    }
 }

@@ -1,45 +1,43 @@
 window.onload = () => {
-    const simpleFunction = document.getElementById('simpleFunctionDisplay');
-    const functionReturn = document.getElementById('functionReturnDisplay');
-    const functionParameters = document.getElementById('functionParametersDisplay');
-
-    function simpleFunction () {
-        console.log("Functions should consist of statements designed to perform a single task.");
-        simpleFunctionDisplay.textContent = "simple";
+    
+    const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
+    function simple() {
+        simpleFunctionDisplay.textContent = "Functions should consist of statements designed to perform a single task.";
+        console.log('simple');
     }
 
-    function functionParameters(value) {
-        console.log(value);
+    const functionParametersDisplay = document.getElementById('functionParametersDisplay');
+    function testParameters(a) {
+            functionParametersDisplay.textContent = a;
+            console.log(a);
     }
 
+    const functionReturnDisplay = document.getElementById('functionReturnDisplay');
+    
     function functionReturn() {
-        return "Many functions return values.";
+        return("Many functions return values"); 
     }
-    }
-    functionCallsAction.onclick = function(){
+
+    const functionCallsAction = document.getElementById('functionCallsAction');
+    functionCallsAction.onclick = function() {
         simple();
-        functionParametersDisplay("Many functions take parameters");
-        let returnValue=functionReturn() 
-            functionParametersDisplay.textContent = returnValue;
-    
-    const data = nameDisplay.value;
-    
+        testParameters("Many functions take parameters");
+        var returnValue = functionReturn() 
+            functionReturnDisplay.textContent = returnValue;
+    }
+
+    const listButton = document.getElementById('addToListAction');
+    listButton.onclick = () => {
+        const myList = document.getElementById('listDisplay');
+        const inputText = document.getElementById('nameDisplay').value;
+            elfCode.appendToList(myList, inputText);
+    }
+
     const elfCode = {
         appendToList: (list, value) => {
             const li = document.createElement("li");
             li.appendChild(document.createTextNode(value));
             list.appendChild(li);
         }
-    }
-    const functionCallsAction = document.getElementById('functionCallsAction');
-    functionCallsAction.onclick = function() {
-        
-    }
-
-    simpleFunction();
-
-    functionParameters("Many functions take parameters.");
-
-    const returnValue = functionReturn(addResult);
-    console.log(returnValue);
-    }
+    }      
+}
